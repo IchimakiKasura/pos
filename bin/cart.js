@@ -5,9 +5,8 @@ class cartClass
     // Add selected items to cart
     static addToCart()
     {
-        let isDuplicate = false;
-
         // checks for duplicate so it can just add the quantity
+        let isDuplicate = false;
         this.cart.forEach(item=>{
             if(item.item == current_item_selected)
             {
@@ -15,14 +14,13 @@ class cartClass
                 isDuplicate = true;
             }
         })
-        
         if(isDuplicate)
         {
             showSelection.showList()
             addToCartAnimation()
             return;
         }
-    
+
         // push the selected item onto cart array
         this.cart.push({
             id: crypto.randomUUID(), // generate random ID for removing item purpose
@@ -33,10 +31,12 @@ class cartClass
         // set the total items on cart icon
         か("#cartTotal").text(this.cart.length);
     
+        // goes back to main page
         showSelection.showList()
         addToCartAnimation()
     }
 
+    // the function name speaks for itself
     static removeItem(id, element)
     {
         // lmao
@@ -55,7 +55,7 @@ class cartClass
         this.refreshPrice()
     }
 
-    // changes the price value
+    // changes the item price value when quantity is increased
     static change(element)
     {
         element.childNodes[11].innerText = `₱${(element.childNodes[5].innerText.replace(/₱|,/g, "") * element.childNodes[9].value).toLocaleString()}`;

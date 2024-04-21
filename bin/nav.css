@@ -1,11 +1,27 @@
 .shop_title {
     cursor: pointer;
     margin-left: 5vw;
+    filter: drop-shadow(0 0 5px red);
+    animation: rgb 3s infinite ease-in-out;
+    user-select: none;f
+}
+
+.nav_img {
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: -30px;
+    height: 300px;
+    transform: scaleX(-1);
+    left: 8.5vw;
+    filter: drop-shadow(0 0 5px red);
+    animation: rgb 3s infinite ease-in-out ;
 }
 
 .navigation {
+    position: relative;
     height: 100px;
-    background: pink;
+    background: rgb(255, 178, 191);
     display: flex;
     margin: auto;
     align-items: center;
@@ -13,6 +29,7 @@
     font-size: 25px;
     white-space: nowrap;
     box-shadow: 0 0 0.5vw 0 black;
+    overflow: hidden;
 }
 
 #searchButton {
@@ -29,6 +46,7 @@
 }
 
 #searchbar {
+    z-index: 1;
     margin: 0 0 0 50px;
     font-size: 15px;
     padding: 10px;
@@ -62,4 +80,22 @@
     border-radius: 20px;
     pointer-events: none;
     user-select: none;
+}
+
+@keyframes rgb {
+    0% {
+        filter: drop-shadow(0 0 5px red)
+    }
+
+    33.3% {
+        filter: drop-shadow(0 0 5px green)
+    }
+
+    66.3% {
+        filter: drop-shadow(0 0 5px blue)
+    }
+
+    100% {
+        filter: drop-shadow(0 0 5px red)
+    }
 }

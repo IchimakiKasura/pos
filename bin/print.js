@@ -20,8 +20,8 @@ function printDiv()
 
     か("#Total_price_receipt").text(totalPrice.toLocaleString())
 
-    let nav = か("nav")
-    let receipt = か(".receipt")
+    let nav = か("nav"),
+    receipt = か(".receipt")
 
     か("[data-show]").gAll.forEach(el=>{
         el.setAttribute("data-show", 0)

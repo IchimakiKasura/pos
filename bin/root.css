@@ -13,7 +13,7 @@
 body {
     overflow: hidden;
     height: 100vh;
-    background-image: linear-gradient(white 50%, rgb(255, 86, 115));
+    background-image: linear-gradient(rgb(255, 86, 115), black 100%);
 }
 
 .cart_add_notif {

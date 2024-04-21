@@ -5,6 +5,7 @@ class sectionChange
     static #cart = か(".main_cart");
     static #ds = "data-show"
     
+    // shows main list section and hides the rest
     static showList()
     {
         this.#list.atr(this.#ds, 1)
@@ -12,6 +13,7 @@ class sectionChange
         this.#cart.atr(this.#ds, 0)
     }
 
+    // shows cart section and hides the rest
     static showCart()
     {
         this.#list.gt.childNodes[1].innerHTML = ""
@@ -20,6 +22,7 @@ class sectionChange
         this.#cart.atr(this.#ds, 1)
     }
 
+    // shows item section and hides the rest
     static showItem()
     {
         this.#list.gt.childNodes[1].innerHTML = ""

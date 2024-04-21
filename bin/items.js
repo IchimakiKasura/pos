@@ -30,6 +30,30 @@ const items = [
         tags: "tower atx full-tower case Corsair icue rgb tempered glass"
     },
     {
+        image: "images/items/PC case 2.webp",
+        title: "Corsair 5000D Tempered Glass Mid-Tower ATX PC Case (Black)",
+        price: 8650,
+        tags: "tower atx mid-tower case Corsair 5000D tempered glass black"
+    },
+    {
+        image: "images/items/PC case 3.jpg",
+        title: "Buy LIAN LI LANCOOL 216RX Black Steel",
+        price: 8650,
+        tags: "tower atx mid-tower case lian li 216rx tempered glass black"
+    },
+    {
+        image: "images/items/PC case 4.webp",
+        title: "Thermaltake The Tower 300 Micro ATX Tempered Glass",
+        price: 8195,
+        tags: "tower atx tower case thermaltake 300 tempered glass mirco"
+    },
+    // {
+    //     image: "images/items/bata.jpg",
+    //     title: "John Aldrine Gabion",
+    //     price: 69420,
+    //     tags: "bata"
+    // },
+    {
         image: "images/items/ram.jpg",
         title: "Corsair VENGEANCE® 32GB (2x16GB) DDR5 DRAM 4800MHz C40 Memory Kit — Black",
         price: 17998,
@@ -54,10 +78,28 @@ const items = [
         tags: "gtx rtx gpu 3060 ti eagle oc 8gb gddr6 rev 1 gigabyte geforce graphics card"
     },
     {
+        image: "images/items/lmao.jpg",
+        title: "Potion of Immortality",
+        price: 50000,
+        tags: ""
+    },
+    {
+        image: "images/items/chair.webp",
+        title: "Vergil's Chair [WORKING!! 100% TESTED]",
+        price: 90000000,
+        tags: "dmc devly may cry vergil dante nero"
+    },
+    {
         image: "images/items/aio.webp",
         title: "ASUS ROG Strix LC 240 II ARGB | RGB AIO Liquid CPU Cooler 240mm Radiator",
         price: 7495,
         tags: "aio water cool radiator rgb all-in-one cooler cpu liquid asus rog strix 240mm"
+    },
+    {
+        image: "images/items/98k.jpg",
+        title: "Karabiner 98k [AMMO NOT INCLUDED]",
+        price: 25500,
+        tags: "kar98k german ww2 world war 2"
     },
     {
         image: "images/items/aio2.webp",
@@ -72,10 +114,22 @@ const items = [
         tags: "phone cellphone mobile oneplus ace pro hutao genshins"
     },
     {
+        image: "images/items/belle.webp",
+        title: "Gamer Girl Bath Water",
+        price: 1500,
+        tags: "belle delphine"
+    },
+    {
         image: "images/items/car.avif",
         title: "Tesla Model S (BASE)",
         price: 4397425,
         tags: "tesla elon musk model s car electric"
+    },
+    {
+        image: "images/items/setup.jpg",
+        title: "Computer setup | complete",
+        price: 534032,
+        tags: "intel celeron setup full build computer pc"
     },
     {
         image: "images/items/america.gif",
@@ -90,9 +144,39 @@ const items = [
         tags: "kidney real"
     },
     {
+        image: "images/items/gcash.png",
+        title: "gcash apk infinite money mod",
+        price: 1,
+        tags: "android"
+    },
+    {
         image: "images/items/elfu.jpg",
         title: "[real] Elf slave",
         price: 5000000,
         tags: "elf slave real"
+    },
+    {
+        image: "images/items/dakimakura.jpg",
+        title: "Fate Apocrypha Astolfo Pillow Body Case Zipper Pillow Cases 20 X 54 in (140 X 50 cm)",
+        price: 980,
+        tags: "Fate Apocrypha astoflo dakimakura pillow body"
+    },
+    {
+        image: "images/items/resort.jpg",
+        title: "Resort | 10k per night",
+        price: 10000,
+        tags: "chocolate hills resort"
+    },
+    {
+        image: "images/items/horseconch.jpg",
+        title: "horse CONCH",
+        price: 5000,
+        tags: "shell sea ocean"
+    },
+    {
+        image: "images/items/doit.jpg",
+        title: "He's gonna do it for you",
+        price: 10,
+        tags: "long dog"
     }
 ]

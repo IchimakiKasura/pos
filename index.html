@@ -4,7 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kasura's Shop</title>
+        <title>Trap Shop | Online Shopping</title>
+        <link rel="shortcut icon" href="images/icon.jpg" type="image/x-icon">
         <link rel="stylesheet" href="bin/root.css">
         <link rel="stylesheet" href="bin/nav.css">
         <link rel="stylesheet" href="bin/main.css">
@@ -28,10 +29,11 @@
             </div>
 
             <nav class="navigation">
-                <h1 class="shop_title" onclick="showSelection.showList()">Kasura's Shop</h1>
+                <img class="nav_img" src="images/astolfo.png" alt="astolfo">
+                <h1 class="shop_title" onclick="showSelection.showList()">Trap Shop</h1>
                 <input id="searchbar" type="text" placeholder="Computers, Graphic Cards, Mouse, Keyboard...">
                 <button id="searchButton">
-                    <img src="images/search.svg" title="search">
+                    <img src="images/search.svg" title="search"  alt="search">
                 </button>
                 <div class="cart" onclick="showSelection.showCart()">
                     <img src="images/cart.svg">
@@ -55,8 +57,9 @@
                             <h1 class="info_title"></h1>
                             <p class="info_price"></p>
                             <div class="info_active">
-                                <p class="txt">Quantity:</p>
+                                <span class="txt">Quantity:</span>
                                 <input id="quantity" type="number" max="99" min="1">
+                                <br><br>
                                 <br><br>
                                 <button class="info_button" onclick="cartClass.addToCart()">Add to cart</button>
                                 <button class="info_button" onclick="showSelection.showList()">Go Back</button>
