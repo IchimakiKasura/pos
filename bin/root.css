@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    font-family: Tahoma;
+}
+
+[data-show="1"] {
+    display: block;
+}
+[data-show="0"] {
+    display: none !important;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    background-image: linear-gradient(white 50%, rgb(255, 86, 115));
+}
+
+.cart_add_notif {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    opacity: 1;
+    transition: opacity 2s;
+}

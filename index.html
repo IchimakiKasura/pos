@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kasura's Shop</title>
+        <link rel="stylesheet" href="bin/root.css">
+        <link rel="stylesheet" href="bin/nav.css">
+        <link rel="stylesheet" href="bin/main.css">
+        <script src="bin/kasu.js"></script>
+        <script src="bin/items.js"></script>
+
+        <script defer src="bin/root.js"></script>
+        <script defer src="bin/TextBoilerplate.js"></script>
+        <script defer src="bin/sectionChange.js"></script>
+        <script defer src="bin/showSelection.js"></script>
+        <script defer src="bin/print.js"></script>
+        <script defer src="bin/cart.js"></script>
+        <script defer src="bin/search.js"></script>
+
+    </head>
+
+    <body>
+        
+            <div class="cart_add_notif">
+                Added to Cart
+            </div>
+
+            <nav class="navigation">
+                <h1 class="shop_title" onclick="showSelection.showList()">Kasura's Shop</h1>
+                <input id="searchbar" type="text" placeholder="Computers, Graphic Cards, Mouse, Keyboard...">
+                <button id="searchButton">
+                    <img src="images/search.svg" title="search">
+                </button>
+                <div class="cart" onclick="showSelection.showCart()">
+                    <img src="images/cart.svg">
+                    <div id="cartTotal">0</div>
+                </div>
+            </nav>
+
+            <main>
+
+                <section class="main_list" data-show="0">
+                    <div class="main_item_list">
+
+                    </div>
+                </section>
+
+                <section class="main_item_show" data-show="0">
+
+                    <div class="cl">
+                        <img id="item_current" alt="item_picture">
+                        <div class="info">
+                            <h1 class="info_title"></h1>
+                            <p class="info_price"></p>
+                            <div class="info_active">
+                                <p class="txt">Quantity:</p>
+                                <input id="quantity" type="number" max="99" min="1">
+                                <br><br>
+                                <button class="info_button" onclick="cartClass.addToCart()">Add to cart</button>
+                                <button class="info_button" onclick="showSelection.showList()">Go Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="main_cart" data-show="0">
+
+                    <div class="bottom_cart_info">
+                        <div class="cart_all_total">
+                            <h2>Total: ₱<span id="price"></span></h2>
+                            <button id="checkout" onclick="printDiv()">Check Out</button>
+                        </div>
+                    </div>
+
+                    <div class="placeholder">
+                        <img src="images/404.png" alt="">
+                        <h1>No items added.</h1>
+                        <br><br>
+                        <button onclick="showSelection.showList()">Go Back</button>
+                    </div>
+                    <div class="list_scroll">
+                    </div>
+
+                </section>
+
+                <section class="receipt" data-show="0">
+
+                    <h1>KASURA SHOP RECEIPT</h1>
+                    <hr>
+                    <br>
+                    <div class="list_receipt">
+                        <h5 class="list_receipt_title">ITEM NAME | QUANTITY</h5>
+                        <h5 class="list_receipt_price">PRICE</h5>
+                    </div>
+                    <br>
+                    <div class="list_items_receipts"></div>
+                    <hr>
+                    <br>
+                    <div class="list_receipt">
+                        <h1 class="list_receipt_title">xxxxxxxxxxxxxxxxxxx</h5>
+                        <h1 class="list_receipt_price">₱<span id="Total_price_receipt"></span></h5>
+                    </div>
+
+                </section>
+
+            </main>
+
+    </body>
+
+</html>
