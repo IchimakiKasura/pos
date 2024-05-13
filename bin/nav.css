@@ -3,7 +3,7 @@
     margin-left: 5vw;
     filter: drop-shadow(0 0 5px red);
     animation: rgb 3s infinite ease-in-out;
-    user-select: none;f
+    user-select: none;
 }
 
 .nav_img {
@@ -19,8 +19,10 @@
 }
 
 .navigation {
-    position: relative;
+    position: fixed;
     height: 100px;
+    width: 100%;
+    top: 0;
     background: rgb(255, 178, 191);
     display: flex;
     margin: auto;
@@ -30,6 +32,7 @@
     white-space: nowrap;
     box-shadow: 0 0 0.5vw 0 black;
     overflow: hidden;
+    z-index: 100;
 }
 
 #searchButton {
@@ -42,7 +45,7 @@
 }
 
 #searchButton img {
-    height: 25px;
+    height: 25.4px;
 }
 
 #searchbar {
@@ -65,7 +68,7 @@
 .cart {
     position: relative;
     cursor: pointer;
-    margin-right: 5vw;
+    margin-right: 2vw;
 }
 
 #cartTotal {
@@ -74,12 +77,24 @@
     right: -10px;
     background-color: red;
     padding: 5px;
-    font-size: 3px;
+    font-size: 0.5vw;
     color: white;
     font-weight: bold;
     border-radius: 20px;
     pointer-events: none;
     user-select: none;
+}
+
+.account img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+.account img:hover {
+    box-shadow: 0 0 5px 1px black;
 }
 
 @keyframes rgb {

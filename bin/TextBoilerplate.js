@@ -20,10 +20,19 @@ class insertText
     static insertItemLists(itemNo, itemImage, itemName, itemPrice)
     {
         return `
-<div class="item" data-itemNumber="${itemNo}" title="${itemName}" onclick="showSelection.showItem(${itemNo})">
+<div class="item" data-itemNumber="${itemNo}" title="${itemName}" onmouseleave="resetQuantity(this)">
     <img src="${itemImage}" alt="item_image">
     <p class="title">${itemName}</p>
     <p class="price">₱${itemPrice.toLocaleString()}</p>
+    <br>
+    <div class="item_misc">
+        <div class="item_quantity">
+            <button onclick="cartClass.decrease(${itemNo})">-</button>
+            <input id="quantity_${itemNo}" type="number" max="99" mind="1" value="1" >
+            <button onclick="cartClass.increase(${itemNo})">+</button>
+        </div>
+        <button class="atc" onclick="cartClass.addToCart(${itemNo})">Add To Cart</button>
+    </div>
 </div>`
 
     }

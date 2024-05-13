@@ -1,4 +1,4 @@
-let current_item_selected;
+let current_item_selected, isLogin;
 
 function addToCartAnimation()
 {
@@ -13,3 +13,11 @@ function addToCartAnimation()
         }, 1100)
     }, 1000)
 }
+
+// resets quantity when hovered
+function resetQuantity(element = new Element)
+{
+    element.querySelector("input").value = 1
+}
+
+か(document).evt("DOMContentLoaded", showSelection.showList)

@@ -1,0 +1,82 @@
+.login {
+    padding-top: 150px !important;
+}
+
+.login_show img {
+    opacity: 0.7;
+    filter: drop-shadow(0 0 5px black);
+    transform: scaleX(-1);
+}
+
+.login_bg
+{
+    justify-content: center;
+    display: flex;
+    background-color: rgba(255, 192, 203, 0.5);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    height: 60vh;
+    overflow: hidden;
+}
+
+.login_form {
+    background-color: white;
+    padding: 30px;
+    margin: 30px;
+    width: 20vw;
+    border-radius: 0.2vw;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.input_form input {
+    padding: 10px;
+    margin: 0 25px 25px 0;
+    font-size: 22px;
+    width: 93.92%;
+}
+.input_form input[type="submit"] {
+    position: relative;
+    padding: 10px;
+    font-size: 22px;
+    top: -15px;
+    width: 100%;
+    border: none;
+    background-color: pink;
+    cursor: pointer;
+    transition: box-shadow 0.1s;
+}
+.input_form input[type="submit"]:hover {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+.login_another, .login_another div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_another div {
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 10px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 2px;
+}
+.login_another div:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.login_another div img {
+    height: 35px;
+    margin-right: 10px;
+}
+
+[data-input-show="0"]
+{
+    opacity: 0;
+}
+[data-input-show="1"]
+{
+    opacity: 1;
+}

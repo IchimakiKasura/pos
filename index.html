@@ -9,21 +9,24 @@
         <link rel="stylesheet" href="bin/root.css">
         <link rel="stylesheet" href="bin/nav.css">
         <link rel="stylesheet" href="bin/main.css">
+        <link rel="stylesheet" href="bin/login.css">
         <script src="bin/kasu.js" type="text/Javascript"></script>
         <script src="bin/items.js" type="text/Javascript"></script>
+        <script src="bin/accounts.js" type="text/Javascript"></script>
 
-        <script defer src="bin/root.js" type="text/Javascript"></script>
         <script defer src="bin/TextBoilerplate.js" type="text/Javascript"></script>
         <script defer src="bin/sectionChange.js" type="text/Javascript"></script>
         <script defer src="bin/showSelection.js" type="text/Javascript"></script>
         <script defer src="bin/print.js" type="text/Javascript"></script>
         <script defer src="bin/cart.js" type="text/Javascript"></script>
         <script defer src="bin/search.js" type="text/Javascript"></script>
-
+        <script defer src="bin/root.js" type="text/Javascript"></script>
     </head>
 
     <body>
         
+            <div class="bg"></div>
+
             <div class="cart_add_notif">
                 Added to Cart
             </div>
@@ -31,7 +34,7 @@
             <nav class="navigation">
                 <img class="nav_img" src="images/astolfo.png" alt="astolfo">
                 <h1 class="shop_title" onclick="showSelection.showList()">Trap Shop</h1>
-                <input id="searchbar" type="text" placeholder="Computers, Graphic Cards, Mouse, Keyboard...">
+                <input id="searchbar" type="search" placeholder="Computers, Graphic Cards, Mouse, Keyboard...">
                 <button id="searchButton">
                     <img src="images/search.svg" title="search"  alt="search">
                 </button>
@@ -39,17 +42,19 @@
                     <img src="images/cart.svg">
                     <div id="cartTotal">0</div>
                 </div>
+                <div class="account" onclick="showSelection.showLogin()">
+                    <img id="account_pfp" src="images/users/no_user.png" alt="user" title="Login">
+                </div>
             </nav>
 
             <main>
 
-                <section class="main_list" data-show="0">
+                <section class="main_list" data-show="1">
                     <div class="main_item_list">
-
                     </div>
                 </section>
 
-                <section class="main_item_show" data-show="0">
+                <!-- <section class="main_item_show" data-show="0">
 
                     <div class="cl">
                         <img id="item_current" alt="item_picture">
@@ -67,26 +72,25 @@
                         </div>
                     </div>
 
-                </section>
+                </section> -->
 
                 <section class="main_cart" data-show="0">
 
-                    <div class="bottom_cart_info">
-                        <div class="cart_all_total">
-                            <h2>Total: ₱<span id="price"></span></h2>
-                            <button id="checkout" onclick="printDiv()">Check Out</button>
-                        </div>
-                    </div>
-
-                    <div class="placeholder">
+                    <div class="placeholder" style="display: block;">
                         <img src="images/404.png" alt="">
                         <h1>No items added.</h1>
                         <br><br>
                         <button onclick="showSelection.showList()">Go Back</button>
                     </div>
-                    <div class="list_scroll">
-                    </div>
 
+                    <div class="list_scroll"></div>
+
+                    <div class="bottom_cart_info">
+                        <div class="cart_all_total">
+                            <h2>Total: ₱<span id="price">0</span></h2>
+                            <button id="checkout" onclick="printDiv()">Check Out</button>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="receipt" data-show="0">
@@ -106,11 +110,63 @@
                         <h1 class="list_receipt_title">xxxxxxxxxxxxxxxxxxx</h5>
                         <h1 class="list_receipt_price">₱<span id="Total_price_receipt"></span></h5>
                     </div>
+                    <br>
+                    <div class="list_receipt">
+                        <h1 class="list_receipt_title">CASH AMOUNT</h5>
+                        <h1 class="list_receipt_price">₱<span id="cash_amount"></span></h5>
+                    </div>
+                    <hr>
+                    <div class="list_receipt">
+                        <h1 class="list_receipt_title">CHANGE</h5>
+                        <h1 class="list_receipt_price">₱<span id="cash_change"></span></h5>
+                    </div>
+                </section>
 
+                <section class="login" data-show="0">
+                    <div class="login_bg">
+                        <div class="login_show" nbr>
+                            <img src="images/astolfo.png" alt="img">
+                        </div>
+                        <div class="login_form">
+                            <h2>Log In</h2>
+                            <br>
+                            <div class="input_form">
+                                <form action="#" onsubmit="return Account.Validate()">
+                                    <span id="input_placeholder_user" style="color: red" data-input-show="0">wrong username</span>
+                                    <input type="text" placeholder="Username" id="user">
+                                    <span id="input_placeholder_pass" style="color: red" data-input-show="0">wrong password</span>
+                                    <input type="password" placeholder="Password" id="pass">
+                                    <br nbr>
+                                    <br nbr>
+                                    <br nbr>
+                                    <input type="submit" id="login" value="LOG IN">
+                                </form>
+                                <hr>
+                                <div class="login_another">
+                                    <div class="fb_button">
+                                        <img src="images/fb.svg" alt="fb login">
+                                        <p>Login with Facebook</p>
+                                    </div>
+                                    <div class="google_button">
+                                        <img src="images/google.png" alt="google login">
+                                        <p>Login with Google</p>
+                                    </div>
+                                </div>
+                                <br nbr>
+                                <p style="text-align: center;">
+                                    Grade 11-ICT
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
             </main>
-
+            <br nbr>
+            <br nbr>
+            <p nbr id="lmao" style="text-align: center; color: white;">&copy; 2024 Trap Shop. All Rights Unreserved</p>
+            <br nbr>
+            <br nbr>
     </body>
 
 </html>

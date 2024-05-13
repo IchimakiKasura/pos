@@ -1,5 +1,21 @@
 function printDiv()
 {
+    if(!isLogin)
+    {
+        sectionChange.showLogin()
+        return;
+    }
+
+    let cash = parseInt(prompt("Amount to pay"))
+
+    if(isNaN(cash))
+    {
+        alert("Invalid input!")
+        return;
+    }
+
+    か("#cash_amount").text(cash.toLocaleString())
+
     if(cartClass.cart.length == 0) return;
 
     let totalPrice = 0;
@@ -18,7 +34,15 @@ function printDiv()
         totalPrice += price*quantity;
     }
 
+    if(cash < totalPrice)
+    {
+        alert("Insufficient funds!")
+        return;
+    }
+
     か("#Total_price_receipt").text(totalPrice.toLocaleString())
+
+    か("#cash_change").text((cash-totalPrice).toLocaleString())
 
     let nav = か("nav"),
     receipt = か(".receipt")

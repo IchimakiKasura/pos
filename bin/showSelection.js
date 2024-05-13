@@ -55,9 +55,13 @@ class showSelection
             か("#addtoCart").rmevt()
         } catch {}
     }
-}
 
-か(document).evt("DOMContentLoaded", showSelection.showList)
+    static showLogin()
+    {
+        if(isLogin) return;
+        sectionChange.showLogin()
+    }
+}
 
 // DEBUG
 // showCart()

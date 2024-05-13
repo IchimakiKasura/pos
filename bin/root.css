@@ -10,9 +10,24 @@
     display: none !important;
 }
 
+[nbr]
+{
+    user-select: none;
+    pointer-events: none;
+}
+
 body {
-    overflow: hidden;
     height: 100vh;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
     background-image: linear-gradient(rgb(255, 86, 115), black 100%);
 }
 

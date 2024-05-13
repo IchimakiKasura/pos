@@ -3,14 +3,15 @@ class cartClass
     static cart = []
 
     // Add selected items to cart
-    static addToCart()
+    static addToCart(selected_item)
     {
         // checks for duplicate so it can just add the quantity
         let isDuplicate = false;
+        let qty = か(`#quantity_${selected_item}`);
         this.cart.forEach(item=>{
-            if(item.item == current_item_selected)
+            if(item.item == selected_item)
             {
-                item.quantity = parseInt(item.quantity) + parseInt(か("#quantity").val());
+                item.quantity = parseInt(item.quantity) + parseInt(qty.val());
                 isDuplicate = true;
             }
         })
@@ -24,12 +25,13 @@ class cartClass
         // push the selected item onto cart array
         this.cart.push({
             id: crypto.randomUUID(), // generate random ID for removing item purpose
-            item: current_item_selected,
-            quantity: か("#quantity").val()
+            item: selected_item,
+            quantity: qty.val()
         })
     
         // set the total items on cart icon
         か("#cartTotal").text(this.cart.length);
+        qty.val(1)
     
         // goes back to main page
         showSelection.showList()
@@ -74,5 +76,23 @@ class cartClass
         })
 
         か("#price").text(tempPrice.toLocaleString())
+    }
+
+    // decrease price
+    static decrease(itemNo)
+    {
+        let qty = か(`#quantity_${itemNo}`)
+        let num = parseInt(qty.val());
+        if(num >= 2)
+            qty.val(num+-1)
+    }
+
+    // increase price
+    static increase(itemNo)
+    {
+        let qty = か(`#quantity_${itemNo}`)
+        let num = parseInt(qty.val());
+        if(num <= 98)
+            qty.val(num+=1)
     }
 }

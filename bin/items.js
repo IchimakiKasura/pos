@@ -47,12 +47,12 @@ const items = [
         price: 8195,
         tags: "tower atx tower case thermaltake 300 tempered glass mirco"
     },
-    // {
-    //     image: "images/items/bata.jpg",
-    //     title: "John Aldrine Gabion",
-    //     price: 69420,
-    //     tags: "bata"
-    // },
+    {
+        image: "images/items/bata.jpg",
+        title: "John Aldrine Gabion",
+        price: 69420,
+        tags: "bata"
+    },
     {
         image: "images/items/ram.jpg",
         title: "Corsair VENGEANCE® 32GB (2x16GB) DDR5 DRAM 4800MHz C40 Memory Kit — Black",
