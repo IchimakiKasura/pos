@@ -47,12 +47,12 @@ const items = [
         price: 8195,
         tags: "tower atx tower case thermaltake 300 tempered glass mirco"
     },
-    {
-        image: "images/items/bata.jpg",
-        title: "John Aldrine Gabion",
-        price: 69420,
-        tags: "bata"
-    },
+    // {
+    //     image: "images/items/bata.jpg",
+    //     title: "John Aldrine Gabion",
+    //     price: 69420,
+    //     tags: "bata"
+    // },
     {
         image: "images/items/ram.jpg",
         title: "Corsair VENGEANCE® 32GB (2x16GB) DDR5 DRAM 4800MHz C40 Memory Kit — Black",
@@ -77,12 +77,12 @@ const items = [
         price: 21950,
         tags: "gtx rtx gpu 3060 ti eagle oc 8gb gddr6 rev 1 gigabyte geforce graphics card"
     },
-    {
-        image: "images/items/lmao.jpg",
-        title: "Potion of Immortality",
-        price: 50000,
-        tags: ""
-    },
+    // {
+    //     image: "images/items/lmao.jpg",
+    //     title: "Potion of Immortality",
+    //     price: 50000,
+    //     tags: ""
+    // },
     {
         image: "images/items/chair.webp",
         title: "Vergil's Chair [WORKING!! 100% TESTED]",
@@ -113,12 +113,12 @@ const items = [
         price: 34200,
         tags: "phone cellphone mobile oneplus ace pro hutao genshins"
     },
-    {
-        image: "images/items/belle.webp",
-        title: "Gamer Girl Bath Water",
-        price: 1500,
-        tags: "belle delphine"
-    },
+    // {
+    //     image: "images/items/belle.webp",
+    //     title: "Gamer Girl Bath Water",
+    //     price: 1500,
+    //     tags: "belle delphine"
+    // },
     {
         image: "images/items/car.avif",
         title: "Tesla Model S (BASE)",
@@ -132,51 +132,87 @@ const items = [
         tags: "intel celeron setup full build computer pc"
     },
     {
-        image: "images/items/america.gif",
-        title: "AMERICA YA",
-        price: 999999999999999,
-        tags: "america ya hallo"
+        image: "images/items/monitor3.webp",
+        title: "Xiaomi Monitor A22i",
+        price: 4439,
+        tags: "gaming"
     },
     {
-        image: "images/items/nani.jpg",
-        title: "[real] KIDNEY",
-        price: 1000000,
-        tags: "kidney real"
+        image: "images/items/monitor4.webp",
+        title: "Samsung 22\" 1080p LED Monitor",
+        price: 4779,
+        tags: "gaming"
     },
     {
-        image: "images/items/gcash.png",
-        title: "gcash apk infinite money mod",
-        price: 1,
-        tags: "android"
+        image: "images/items/mouse2.webp",
+        title: "Logitech G304 Lightspeed Wireless Gaming Mouse",
+        price: 1995,
+        tags: ""
     },
     {
-        image: "images/items/elfu.jpg",
-        title: "[real] Elf slave",
-        price: 5000000,
-        tags: "elf slave real"
+        image: "images/items/mouse3.jpg",
+        title: "Razer Viper Mini",
+        price: 1999,
+        tags: "gaming mouse"
     },
     {
-        image: "images/items/dakimakura.jpg",
-        title: "Fate Apocrypha Astolfo Pillow Body Case Zipper Pillow Cases 20 X 54 in (140 X 50 cm)",
-        price: 980,
-        tags: "Fate Apocrypha astoflo dakimakura pillow body"
+        image: "images/items/mouse4.jpg",
+        title: "ZeYus M-99",
+        price: 1999,
+        tags: "Mecha Style Gaming Mouse USB Wired Mechanical Led Mice Backlight Laptop PC"
     },
     {
-        image: "images/items/resort.jpg",
-        title: "Resort | 10k per night",
-        price: 10000,
-        tags: "chocolate hills resort"
+        image: "images/items/keyboard2.jpg",
+        title: "A4Tech KRS-85",
+        price: 355,
+        tags: "Natural Comfort Roundedge Keycaps Laser Inscribed Keys USB Wired Keyboard"
     },
-    {
-        image: "images/items/horseconch.jpg",
-        title: "horse CONCH",
-        price: 5000,
-        tags: "shell sea ocean"
-    },
-    {
-        image: "images/items/doit.jpg",
-        title: "He's gonna do it for you",
-        price: 10,
-        tags: "long dog"
-    }
+    // {
+    //     image: "images/items/america.gif",
+    //     title: "AMERICA YA",
+    //     price: 999999999999999,
+    //     tags: "america ya hallo"
+    // },
+    // {
+    //     image: "images/items/nani.jpg",
+    //     title: "[real] KIDNEY",
+    //     price: 1000000,
+    //     tags: "kidney real"
+    // },
+    // {
+    //     image: "images/items/gcash.png",
+    //     title: "gcash apk infinite money mod",
+    //     price: 1,
+    //     tags: "android"
+    // },
+    // {
+    //     image: "images/items/elfu.jpg",
+    //     title: "[real] Elf slave",
+    //     price: 5000000,
+    //     tags: "elf slave real"
+    // },
+    // {
+    //     image: "images/items/dakimakura.jpg",
+    //     title: "Fate Apocrypha Astolfo Pillow Body Case Zipper Pillow Cases 20 X 54 in (140 X 50 cm)",
+    //     price: 980,
+    //     tags: "Fate Apocrypha astoflo dakimakura pillow body"
+    // },
+    // {
+    //     image: "images/items/resort.jpg",
+    //     title: "Resort | 10k per night",
+    //     price: 10000,
+    //     tags: "chocolate hills resort"
+    // },
+    // {
+    //     image: "images/items/horseconch.jpg",
+    //     title: "horse CONCH",
+    //     price: 5000,
+    //     tags: "shell sea ocean"
+    // },
+    // {
+    //     image: "images/items/doit.jpg",
+    //     title: "He's gonna do it for you",
+    //     price: 10,
+    //     tags: "long dog"
+    // }
 ]
